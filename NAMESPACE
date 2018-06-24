@@ -1,0 +1,2 @@
+export(ASNE)
+useDynLib(asne, .registration=TRUE)
