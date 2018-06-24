@@ -1,5 +1,5 @@
 #FILL THIS IN
-HDIPATH=/home/exa/work/hdi-install
+HDIPATH=/usr/local
 
 CXXFLAGS=-I$(HDIPATH)/include
 HDILIBPATH=$(HDIPATH)/bin/hdi
