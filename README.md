@@ -10,7 +10,7 @@ Pezzotti, N., Lelieveldt, B. P., van der Maaten, L., Höllt, T., Eisemann, E., &
 - clone install the High Dimensionality Inspector from here: https://github.com/Nicola17/High-Dimensional-Inspector . Remember where you installed it (the `-DCMAKE_INSTALL_PREFIX` variable). Step by step:
   1. `cd High-Dimensionality-Inspector`
   2. `mkdir build; cd build`
-  3. `cmake -DCMAKE_INSTALL_PREFIX=/home/YOURNAME/.local ..`  (fill in your name; optional prefix is `/usr/local` if you have the privilege)
+  3. `cmake -DCMAKE_INSTALL_PREFIX=/home/YOURNAME/.local ..`  (fill in your name; optional prefix is `/usr/local` if you have the privilege). You also want to pass some optimizer options, like `-DCMAKE_CXX_FLAGS=-O3`. You will also probably need CRoaring library, available from here: https://github.com/exaexa/R.asne
   4. `make -jN && make install` (fill in your number of available CPUs)
 - clone the R.asne repository
 - go to the src folder, edit `Makefile` and fill in the path to where you installed the High-Dimensionality-Inspector. If you installed to `/usr/local`, you probably don't need anything.
